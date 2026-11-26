@@ -1,0 +1,5 @@
+Self-hosted fonts downloaded 2026-11-25 from Fontsource's jsDelivr distribution.
+Cormorant Garamond variable Latin, normal and italic: https://cdn.jsdelivr.net/fontsource/fonts/cormorant-garamond:vf@latest/latin-wght-normal.woff2 (and italic).
+DM Sans variable Latin normal: https://cdn.jsdelivr.net/fontsource/fonts/dm-sans:vf@latest/latin-wght-normal.woff2
+OFL licenses accompany these files. Locally subset to ASCII and the punctuation/rupee glyphs used by this website using subset-font/Harfbuzz; variable weight axes retained. Extend subsets if approved copy introduces other characters.
+No runtime requests to Fontsource or Google Fonts.

@@ -1,0 +1,3 @@
+@layer components {
+.concierge{background:var(--emerald-900);color:var(--ivory);padding-block:var(--section-space);text-align:center;border-bottom:1px solid var(--light-line)}.concierge h2{max-width:760px;margin-inline:auto;font-size:var(--h1)}.concierge p{margin-block:var(--s-5) var(--s-6)}.concierge__knot{display:block;width:150px;height:65px;margin:var(--s-5) auto 0;stroke:var(--gold);fill:none;stroke-width:1.5}
+}

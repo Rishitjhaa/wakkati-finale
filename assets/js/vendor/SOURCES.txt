@@ -1,0 +1,1 @@
+GSAP 3.13.0 and ScrollTrigger 3.13.0, downloaded 2026-11-25 from https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ . Unmodified authentic upstream minified files. License references are retained in the library headers and README-GSAP.md. No CDN runtime scripts.

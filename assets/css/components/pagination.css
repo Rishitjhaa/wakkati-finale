@@ -1,0 +1,23 @@
+@layer components {
+.catalogue{padding-bottom:var(--section-space)}
+.catalogue__status{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:var(--s-3);padding-block:var(--s-5)}
+.catalogue__count{font:500 var(--h3)/1.1 var(--serif);font-style:italic}
+.catalogue__clear{padding:0 var(--s-1);border-bottom:1px solid var(--gold);font-size:var(--small);letter-spacing:.14em;text-transform:uppercase}
+.catalogue__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--s-3);row-gap:var(--s-6)}
+.catalogue__grid>.product-card{animation:catalogue-in var(--dur-ui) var(--ease-out) both}
+@keyframes catalogue-in{from{opacity:0;transform:translateY(16px)}}
+.catalogue__more{display:grid;justify-items:center;gap:var(--s-3);margin-top:var(--s-8);text-align:center}
+.catalogue__progress{font-size:var(--small);letter-spacing:.12em;text-transform:uppercase}
+.catalogue__bar{width:min(240px,60%);height:1px;background:var(--hairline)}
+.catalogue__bar i{display:block;height:3px;margin-top:-1px;background:var(--gold);transition:width var(--dur-section) var(--ease-out)}
+.catalogue__empty{display:grid;justify-items:center;gap:var(--s-4);padding-block:var(--s-9);text-align:center;border-top:1px dashed var(--gold-ink);border-bottom:1px dashed var(--gold-ink);margin-top:var(--s-5)}
+.catalogue__empty-kicker{font-size:var(--eyebrow);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink)}
+.catalogue__empty-actions{display:flex;flex-wrap:wrap;gap:var(--s-5);justify-content:center;align-items:center;margin-top:var(--s-3)}
+@media(min-width:768px){.catalogue__grid{grid-template-columns:repeat(3,minmax(0,1fr));column-gap:var(--s-5);row-gap:var(--s-7)}}
+@media(min-width:1280px){.catalogue__grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* Editorial rhythm: alternate columns step down so the rows read as a hung rail, not a table. */
+@media(max-width:767px){.catalogue__grid>.product-card:nth-child(even){margin-top:var(--s-6)}}
+@media(min-width:768px) and (max-width:1279px){.catalogue__grid>.product-card:nth-child(3n+2){margin-top:var(--s-7)}}
+@media(min-width:1280px){.catalogue__grid>.product-card:nth-child(4n+2),.catalogue__grid>.product-card:nth-child(4n+4){margin-top:var(--s-7)}}
+@media(prefers-reduced-motion:reduce){.catalogue__grid>.product-card{animation:none}}
+}
